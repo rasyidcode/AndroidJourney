@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "870530783876",
+    "firebase_url": "https://kotlin-eat-it.firebaseio.com",
+    "project_id": "kotlin-eat-it",
+    "storage_bucket": "kotlin-eat-it.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:870530783876:android:f5da105c21f15c3a",
+        "android_client_info": {
+          "package_name": "me.jamilalrasyidis.eatit"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "870530783876-kbhaatq6me8n0nop7486tqmad8kib2re.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "me.jamilalrasyidis.eatit",
+            "certificate_hash": "3373730b3dbc3405fa0a2f51f938d5cefcacc369"
+          }
+        },
+        {
+          "client_id": "870530783876-fvjoda44bmkfar2g8of3gm8pfn7phm7e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCvCXkF0zCHTbEi88JeCipljmRneJIHy9g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "870530783876-fvjoda44bmkfar2g8of3gm8pfn7phm7e.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
