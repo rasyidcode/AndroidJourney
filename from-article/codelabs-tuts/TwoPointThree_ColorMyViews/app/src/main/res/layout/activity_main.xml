@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/constraint_layout"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tv_box_one"
+        style="@style/WhiteBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_width"
+        android:layout_marginTop="@dimen/margin_width"
+        android:layout_marginEnd="@dimen/margin_width"
+        android:text="@string/text_box_one"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_box_two"
+        style="@style/WhiteBox"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_marginTop="@dimen/margin_width"
+        android:text="@string/text_box_two"
+        app:layout_constraintStart_toStartOf="@+id/tv_box_one"
+        app:layout_constraintTop_toBottomOf="@+id/tv_box_one" />
+
+    <TextView
+        android:id="@+id/tv_box_three"
+        style="@style/WhiteBox"
+        android:layout_marginStart="@dimen/margin_width"
+        android:layout_marginEnd="@dimen/margin_width"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/text_box_three"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tv_box_two"
+        app:layout_constraintTop_toTopOf="@+id/tv_box_two"
+        app:layout_constraintTop_toBottomOf="@+id/tv_box_one"
+        app:layout_constraintBottom_toTopOf="@+id/tv_box_four"/>
+
+    <TextView
+        android:id="@+id/tv_box_four"
+        style="@style/WhiteBox"
+        android:layout_width="0dp"
+        android:layout_marginTop="@dimen/margin_width"
+        android:layout_marginStart="@dimen/margin_width"
+        android:layout_marginEnd="@dimen/margin_width"
+        android:layout_marginBottom="@dimen/margin_width"
+        android:layout_height="wrap_content"
+        android:text="@string/text_box_four"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tv_box_two"
+        app:layout_constraintTop_toBottomOf="@+id/tv_box_three"
+        app:layout_constraintBottom_toTopOf="@+id/tv_box_five"/>
+
+    <TextView
+        android:id="@+id/tv_box_five"
+        style="@style/WhiteBox"
+        android:layout_marginStart="@dimen/margin_width"
+        android:layout_marginEnd="@dimen/margin_width"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/text_box_five"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tv_box_two"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_box_two"
+        app:layout_constraintTop_toBottomOf="@+id/tv_box_four" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
