@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "472660007835",
+    "firebase_url": "https://tutorial-project-base.firebaseio.com",
+    "project_id": "tutorial-project-base",
+    "storage_bucket": "tutorial-project-base.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:472660007835:android:b51d985f151f14465c1f3e",
+        "android_client_info": {
+          "package_name": "me.jamilalrasyidis.firebase_messages"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "472660007835-jdj3032kr34dtbcsh8tehbjo48nk2umn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyATcIx2PdcPfxEhXgkoRXgd4lfkQmfAqX8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "472660007835-jdj3032kr34dtbcsh8tehbjo48nk2umn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

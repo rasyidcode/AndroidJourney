@@ -1,0 +1,2 @@
+include ':firstSimpleAndroidApp', ':mvvmbasic', ':firebase-messages'
+rootProject.name='ResoCoderTuts'

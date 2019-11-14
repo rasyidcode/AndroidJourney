@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">1-3_challenges</string>
+    <string name="roll_label">Roll</string>
+    <string name="clear_dice">Clear!</string>
+</resources>

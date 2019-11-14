@@ -1,0 +1,2 @@
+include ':1-1_helloworld', ':1-2_diceroller', ':1-3_diceroller_v2', ':1-1_challenges', ':1-2_challenges', ':1-3_challenges', ':1-4_basicactivity', ':2-1_aboutme', ':2-2_aboutme_v2', ':2-3_colormyviews', ':2-3_challenges', ':2-4_aboutme_databinding'
+rootProject.name='AndroidKotlinFundamentals'

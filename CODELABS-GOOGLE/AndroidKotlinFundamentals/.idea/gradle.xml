@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/1-1_challenges" />
+            <option value="$PROJECT_DIR$/1-1_helloworld" />
+            <option value="$PROJECT_DIR$/1-2_challenges" />
+            <option value="$PROJECT_DIR$/1-2_diceroller" />
+            <option value="$PROJECT_DIR$/1-3_challenges" />
+            <option value="$PROJECT_DIR$/1-3_diceroller_v2" />
+            <option value="$PROJECT_DIR$/1-4_basicactivity" />
+            <option value="$PROJECT_DIR$/2-1_aboutme" />
+            <option value="$PROJECT_DIR$/2-2_aboutme_v2" />
+            <option value="$PROJECT_DIR$/2-3_challenges" />
+            <option value="$PROJECT_DIR$/2-3_colormyviews" />
+            <option value="$PROJECT_DIR$/2-4_aboutme_databinding" />
+          </set>
+        </option>
+        <option name="resolveModulePerSourceSet" value="false" />
+        <option name="testRunner" value="PLATFORM" />
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>

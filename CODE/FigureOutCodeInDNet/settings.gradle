@@ -1,0 +1,2 @@
+include ':base', ':customer', ':testthing'
+rootProject.name='FigureOutCodeInDNet'
