@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#795548</color>
-    <color name="colorPrimaryDark">#4E342E</color>
-    <color name="colorAccent">#FF6D00</color>
+    <color name="colorPrimary">#303F9F</color>
+    <color name="colorPrimaryDark">#1A237E</color>
+    <color name="colorAccent">#FFEB3B</color>
 
     <color name="colorWhite">#FFFFFF</color>
     <color name="colorBlack">#aa000000</color>
     
     <color name="overlayBackground">#7f333639</color>
+    <color name="overlayBackground2">#111316</color>
     <color name="overlayActionBar">#0e0d0e</color>
 </resources>

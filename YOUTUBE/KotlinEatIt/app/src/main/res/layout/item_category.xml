@@ -6,6 +6,7 @@
     <com.google.android.material.card.MaterialCardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        app:cardCornerRadius="0dp"
         app:cardElevation="4dp">
 
         <RelativeLayout
@@ -25,8 +26,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_alignParentBottom="true"
-                android:background="#4f0e0d0e"
+                android:background="#cc000000"
                 android:gravity="center"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
                 android:textColor="@android:color/white"
                 android:textSize="20sp"
                 tools:text="Example Food" />
