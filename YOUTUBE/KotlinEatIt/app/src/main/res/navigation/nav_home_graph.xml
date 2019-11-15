@@ -18,5 +18,11 @@
     <fragment
         android:id="@+id/foodListFragment"
         android:name="me.jamilalrasyidis.eatit.ui.home.FoodListFragment"
-        android:label="FoodListFragment" />
+        android:label="FoodListFragment" >
+
+        <argument
+            android:name="categoryId"
+            app:argType="string" />
+
+    </fragment>
 </navigation>

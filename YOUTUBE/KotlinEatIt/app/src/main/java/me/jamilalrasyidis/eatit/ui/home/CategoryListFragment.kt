@@ -18,18 +18,18 @@ class CategoryListFragment : Fragment() {
 
     private lateinit var binding: FragmentCategoryListBinding
 
-    private val database            by lazy { FirebaseFirestore.getInstance() }
+    private val database                by lazy { FirebaseFirestore.getInstance() }
 
-    private val categories          by lazy { database.collection("categories") }
+    private val categories              by lazy { database.collection("categories") }
 
-    private lateinit var adapter: CategoryListAdapter
+    private lateinit var categoryListAdapter: CategoryListAdapter
 
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        binding                     = DataBindingUtil.inflate(inflater, R.layout.fragment_category_list, container, false)
+        binding = DataBindingUtil.inflate(inflater, R.layout.fragment_category_list, container, false)
         return binding.root
     }
 
@@ -40,27 +40,27 @@ class CategoryListFragment : Fragment() {
     }
 
     private fun setupRecyclerView() {
-        val query: Query            = categories.orderBy("name", Query.Direction.DESCENDING)
+        val query: Query                = categories.orderBy("name", Query.Direction.DESCENDING)
         val options: FirestoreRecyclerOptions<Category> = FirestoreRecyclerOptions.Builder<Category>()
             .setQuery(query, Category::class.java)
             .build()
 
-        adapter                     = CategoryListAdapter(options)
+        categoryListAdapter = CategoryListAdapter(options)
         binding.rvCategoryList.apply {
             setHasFixedSize(true)
-            layoutManager           = LinearLayoutManager(requireContext())
-            adapter                 = adapter
+            layoutManager   = LinearLayoutManager(requireContext())
+            adapter         = categoryListAdapter
         }
     }
 
     override fun onStart() {
         super.onStart()
-        adapter.startListening()
+        categoryListAdapter.startListening()
     }
 
     override fun onStop() {
         super.onStop()
-        adapter.stopListening()
+        categoryListAdapter.stopListening()
     }
 
     companion object {

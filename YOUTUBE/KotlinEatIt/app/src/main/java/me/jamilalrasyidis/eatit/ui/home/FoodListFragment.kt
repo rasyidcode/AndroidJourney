@@ -1,6 +1,7 @@
 package me.jamilalrasyidis.eatit.ui.home
 
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -22,7 +23,7 @@ class FoodListFragment : Fragment() {
 
     private lateinit var binding: FragmentFoodListBinding
 
-    private lateinit var adapter: FoodListAdapter
+    private lateinit var foodListAdapter: FoodListAdapter
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -40,15 +41,27 @@ class FoodListFragment : Fragment() {
     }
 
     private fun setupFoodList() {
+        val categoryId = arguments?.getString("categoryId")?.toIntOrNull()
         val query                   = foodRef.orderBy("name", Query.Direction.ASCENDING)
+                                             .whereEqualTo("categoryId", categoryId)
         val options                 = FirestoreRecyclerOptions.Builder<Food>().setQuery(query, Food::class.java).build()
 
-        adapter                     = FoodListAdapter(options)
+        foodListAdapter             = FoodListAdapter(options)
         binding.rvFoodList.apply {
             setHasFixedSize(true)
             layoutManager           = LinearLayoutManager(requireContext())
-            adapter                 = adapter
+            adapter                 = foodListAdapter
         }
+    }
+
+    override fun onStart() {
+        super.onStart()
+        foodListAdapter.startListening()
+    }
+
+    override fun onStop() {
+        super.onStop()
+        foodListAdapter.stopListening()
     }
 
     companion object {
