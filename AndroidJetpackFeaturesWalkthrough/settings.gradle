@@ -1,0 +1,2 @@
+include ':app', ':data-binding'
+rootProject.name='AndroidJetpackFeaturesWalkthrough'

@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">data-binding</string>
+    <string name="observable_fields_activity_button_text">Observable Field Activity</string>
+    <string name="viewmodel_activity_button_text">ViewModel activity</string>
+    <string name="observable_activity_label_text">Uses observable fields to automaticaly refresh UI and showcase common bad practices</string>
+    <string name="viewmodel_activity_label_text">Uses a ViewModel to hold data and handle user actions, using better alternatives</string>
+    <string name="readme">See README.md for details</string>
+</resources>
