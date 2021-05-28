@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">1_Material_Toolbar</string>
+    <string name="text_setting">Setting</string>
+    <string name="text_search">Search</string>
+</resources>

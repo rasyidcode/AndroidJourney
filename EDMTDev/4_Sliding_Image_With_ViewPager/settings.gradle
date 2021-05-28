@@ -1,0 +1,2 @@
+include ':app'
+rootProject.name = "4_Sliding_Image_With_ViewPager"
